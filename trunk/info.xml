@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Info>
+  <name>AnySearch</name>
+  <description>Google、Yahoo!などでキーワード検索することができます</description>
+  <provider>o2curry</provider>
+  <preference>0</preference>
+  <duplicable>1</duplicable>
+  <height>70</height>
+  <width>280</width>
+  <profile>
+    <spec>AC2.0</spec>
+  </profile>
+</Info>
