@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<Widget>
+  <Component name="widget">
+    
+    <Component name="body" visible="0">
+      <Prim type="rect" w="280" h="500" rgba="ffffffff"/>
+      <Component y="50">
+        <Prim type="rect" w="280" h="400" rgba="e6e6e6ff"/>
+        <Prim type="outline" w="280" h="400" rgba="bbbbbbff"/>
+        <Component name="result" x="-5" w="270" h="400">
+          <Prim name="selector" type="rect" w="270" h="1" rgba="85d3ffff" visible="0"/>
+          <Component name="item0">
+            <Memo2D name="title" x="-135" w="270" h="16" rgba="0000ffff" scroll="1" fade_frames="0"/>
+            <Memo2D name="desc"  x="-125" w="260" h="16" rgba="000000ff" scroll="1" fade_frames="0" font_size="14"/>
+          </Component>
+          <Component name="item1">
+            <Memo2D name="title" x="-135" w="270" h="16" rgba="0000ffff" scroll="1" fade_frames="0"/>
+            <Memo2D name="desc"  x="-125" w="260" h="16" rgba="000000ff" scroll="1" fade_frames="0" font_size="14"/>
+          </Component>
+          <Component name="item2">
+            <Memo2D name="title" x="-135" w="270" h="16" rgba="0000ffff" scroll="1" fade_frames="0"/>
+            <Memo2D name="desc"  x="-125" w="260" h="16" rgba="000000ff" scroll="1" fade_frames="0" font_size="14"/>
+          </Component>
+          <Component name="item3">
+            <Memo2D name="title" x="-135" w="270" h="16" rgba="0000ffff" scroll="1" fade_frames="0"/>
+            <Memo2D name="desc"  x="-125" w="260" h="16" rgba="000000ff" scroll="1" fade_frames="0" font_size="14"/>
+          </Component>
+          <Component name="item4">
+            <Memo2D name="title" x="-135" w="270" h="16" rgba="0000ffff" scroll="1" fade_frames="0"/>
+            <Memo2D name="desc"  x="-125" w="260" h="16" rgba="000000ff" scroll="1" fade_frames="0" font_size="14"/>
+          </Component>
+          <Component name="item5">
+            <Memo2D name="title" x="-135" w="270" h="16" rgba="0000ffff" scroll="1" fade_frames="0"/>
+            <Memo2D name="desc"  x="-125" w="260" h="16" rgba="000000ff" scroll="1" fade_frames="0" font_size="14"/>
+          </Component>
+          <Component name="item6">
+            <Memo2D name="title" x="-135" w="270" h="16" rgba="0000ffff" scroll="1" fade_frames="0"/>
+            <Memo2D name="desc"  x="-125" w="260" h="16" rgba="000000ff" scroll="1" fade_frames="0" font_size="14"/>
+          </Component>
+          <Component name="item7">
+            <Memo2D name="title" x="-135" w="270" h="16" rgba="0000ffff" scroll="1" fade_frames="0"/>
+            <Memo2D name="desc"  x="-125" w="260" h="16" rgba="000000ff" scroll="1" fade_frames="0" font_size="14"/>
+          </Component>
+          <Component name="item8">
+            <Memo2D name="title" x="-135" w="270" h="16" rgba="0000ffff" scroll="1" fade_frames="0"/>
+            <Memo2D name="desc"  x="-125" w="260" h="16" rgba="000000ff" scroll="1" fade_frames="0" font_size="14"/>
+          </Component>
+          <Component name="item9">
+            <Memo2D name="title" x="-135" w="270" h="16" rgba="0000ffff" scroll="1" fade_frames="0"/>
+            <Memo2D name="desc"  x="-125" w="260" h="16" rgba="000000ff" scroll="1" fade_frames="0" font_size="14"/>
+          </Component>
+        </Component>
+        <Component name="scrollbar" x="136" h="400" visible="0">
+          <Prim type="rect"    w="8" h="400" rgba="ccccccff"/>
+          <Prim type="outline" w="8" h="400" rgba="aaaaaaff"/>
+	  <Component name="thumb">
+            <Prim name="bg" type="rect" w="8" h="100" rgba="ffffffff"/>
+            <Prim name="fg" type="outline" w="8" h="100" rgba="000000ff"/>
+          </Component>
+	</Component>
+      </Component>
+      <Prim type="rect" y="-200" w="280" h="100"/>
+      <Component name="keyword" y="-170">
+        <Prim type="rect"    w="200" h="22" rgba="efefefff"/>
+        <Component name="focused" y="1" visible="0">
+          <Prim type="rect"    w="200" h="20" rgba="85d3ffff"/>
+          <Prim type="outline" w="200" h="22" rgba="777777ff"/>
+          <Bitmap name="icon" x="110"/>
+        </Component>
+        <Text name="text" y="8" w="280" alignment="center" rgba="000000ff"/>
+        <Text name="hint" y="8" w="280" alignment="center" rgba="999999ff" str="検索キーワードを入力" />
+        <Component name="tooltip" x="10" y="39" visible="0">
+          <Prim type="rect" x="4" y="4" w="210" h="50" rgba="666666bb"/>
+          <Prim type="rect" w="210" h="50" rgba="ffffccff"/>
+          <Prim type="outline" w="210" h="50" rgba="777777ff"/>
+          <Memo2D x="-150" y="-20" w="300" h="40" size="16" alignment="center" rgba="000000ff" str="[決定]キーを押して検索\nキーワードを入力できます" />
+          <Bitmap name="tip" x="-90" y="-28"/>
+        </Component>
+      </Component>
+
+      <!-- clip -->
+      <Prim type="rect" y="-260" w="300" h="20" rgba="000000ff"/>
+      <Prim type="rect" y="260" w="300" h="20" rgba="000000ff"/>
+      <Prim type="outline" w="280" h="500" rgba="bbbbbbff"/>
+    </Component>
+
+    <Component name="head">
+      <Prim type="rect" w="280" h="70" rgba="ffffffff"/>
+      <Bitmap name="initial-bg" y="-13"/>
+      <Component name="service" y="15">
+        <Prim type="rect"    w="200" h="22" rgba="efefefff"/>
+        <Component name="focused" visible="0">
+          <Prim type="rect"    w="200" h="22" rgba="85d3ffff"/>
+          <Prim type="outline" w="200" h="22" rgba="777777ff"/>
+          <Bitmap name="prev" x="-110"/>
+          <Bitmap name="next" x="110"/>
+        </Component>
+        <Text name="text" y="8" w="280" alignment="center" rgba="000000ff"/>
+      </Component>
+    </Component>
+
+    <Component name="loading" visible="0">
+      <Prim type="rect" w="140" h="40" rgba="000000dd"/>
+      <Text y="8" w="300" size="20" alignment="center" rgba="ffffffff" str="loading ..." />
+    </Component>
+
+    <!-- debug -->
+    <Prim type="outline" x="10" w="300" h="500" rgba="ff0000ff" visible="0"/>
+
+  </Component>
+</Widget>
